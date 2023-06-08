@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" th:hreft="@{/css/estilos.css}"><link>
+	<title>Publicar una nueva Funa</title>
+</head>
+<body>
+	<div class="container">
+		<form th:action="@{/nuevaFuna}" method="post" th:object="${mensaje}" class="tweet-form">
+			<textarea th:field="*{conMsj}" placeholder="¿Qué estás pensando?" required></textarea>
+			<button type="submit">Publicar</button>
+		</form>
+	</div>
+</body>
+</html>
