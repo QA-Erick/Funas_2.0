@@ -1,0 +1,14 @@
+drop database if exists FUNAS;
+create database FUNAS;
+use FUNAS;
+
+create table Mensaje(
+id_msj int primary key auto_increment,
+con_msj varchar(140) not null,
+fec_msj datetime not null default(now()),
+nom_usu varchar(50) not null
+);
+
+select * from mensaje;
+
+insert mensaje values(null,'Prueba 1',default,'Pablo')
